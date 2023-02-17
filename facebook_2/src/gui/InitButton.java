@@ -13,7 +13,6 @@ public class InitButton extends JButton implements Action
     {
         this.name = name;
         JButton button = new JButton();
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
         button.setName(name);
         button.setVisible(true);
         return button;

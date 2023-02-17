@@ -1,4 +1,5 @@
 package gui;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.LayoutManager;
 
@@ -20,7 +21,7 @@ public class MainWindow extends JFrame
     private void getPanel() 
     {
         this.setLayout(new BorderLayout());
-        panel.add(new InitButton().getButton("COMEÇAR!"));
+        panel.add(new InitButton().getButton("COMEÇAR!"), BorderLayout.CENTER);
     }
 
 

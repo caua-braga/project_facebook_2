@@ -1,12 +1,12 @@
 package gui;
 
-import java.awt.BorderLayout;
+import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class MainWindow extends JFrame{
-	public MainWindow()
+public class DeckWindow extends JFrame{
+	public DeckWindow()
     {
         this.setSize(600, 300);
         this.setTitle("Project Facebook 2");
@@ -18,13 +18,9 @@ public class MainWindow extends JFrame{
 
     private void getPanel() 
     {
-        JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout());
-        panel.add(new InitButton("START",this), BorderLayout.CENTER);
-        this.add(panel);
+    	JPanel panel = new JPanel();
+    	panel.setBackground(Color.darkGray);
+    	this.add(panel);
     }
-    
-    
-
 
 }

@@ -3,35 +3,36 @@ package negocio;
 import javax.swing.JButton;
 
 public class Cartas {
-	private String nome;
+	private String name;
 	private int hp;
-	private int ataque;
+	private int atack;
 	private JButton button;
-	private Tipo tipo;
+	private Tipo type;
 	
-	public Cartas(String nome,int hp,int ataque,Tipo tipo) {
-		this.nome=nome;
+	public Cartas(String name,int hp,int atack,Tipo type) {
+		this.name=name;
 		this.hp=hp;
-		this.ataque=ataque;
-		this.tipo=tipo;
+		this.atack=atack;
+		this.type=type;
 	}
 	public String getNome() {
-		return nome;
+		return name;
 	}
 	public int getHp() {
 		return hp;
 	}
 	public int getAtaque() {
-		return ataque;
+		return atack;
 	}
 	public JButton getButton() {
 		return button;
 	}
-	public void setButton(JButton button) {
+	public void createButton() {
+		JButton button=new JButton();
 		this.button = button;
 	}
 	public Tipo tipo() {
-		return tipo;
+		return type;
 	}
 	
 

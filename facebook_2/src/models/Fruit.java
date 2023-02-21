@@ -23,7 +23,7 @@ public enum Fruit
     tangerina,
     pera,
     pessego,
-    jabuticaba,
+    jabuticaba;
     
 
     public static Fruit randomFruit()

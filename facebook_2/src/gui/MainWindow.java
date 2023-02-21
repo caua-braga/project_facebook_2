@@ -1,11 +1,7 @@
 package gui;
 
-import java.awt.BorderLayout;
-import java.awt.BorderLayout;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
 
 public class MainWindow extends JFrame{
 	public MainWindow()

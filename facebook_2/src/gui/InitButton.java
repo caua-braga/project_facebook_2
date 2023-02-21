@@ -7,7 +7,8 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class InitButton extends JButton{
+public class InitButton extends JButton
+{
 	String text;
 
     public InitButton(String text,JFrame frame)
@@ -15,10 +16,12 @@ public class InitButton extends JButton{
         this.text = text;
         this.setText(text);
         this.setBackground(Color.BLUE);
-        this.addActionListener(new ActionListener() {
+        this.addActionListener(new ActionListener() 
+        {
 			
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) 
+            {
 				frame.setVisible(false);
 				DeckWindow deck = new DeckWindow();
 			}

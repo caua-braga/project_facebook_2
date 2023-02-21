@@ -1,8 +1,7 @@
 package gui;
 
-import java.awt.Color;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 
 public class DeckWindow extends JFrame
 {
@@ -17,9 +16,14 @@ public class DeckWindow extends JFrame
     
     private void getPanel() 
     {
-    	JPanel panel = new JPanel();
-    	panel.setBackground(Color.darkGray);
-    	this.add(panel);
+    	JPanel upPanel = new JPanel();
+    	upPanel.setBackground(Color.ORANGE);
+        upPanel.setLayout(new FlowLayout());
+    	this.add(upPanel);
+        JPanel centerPanel = new JPanel();
+        centerPanel.setBackground(Color.yellow);
+        centerPanel.setLayout(new GridLayout(5, 4));
+        this.add(centerPanel);
     }
 
     

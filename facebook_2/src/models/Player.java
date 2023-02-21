@@ -1,4 +1,4 @@
-package negocio;
+package models;
 
 public class Player {
 	public String name;

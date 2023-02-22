@@ -8,7 +8,7 @@ public class Card implements Associated
 	private int hp;
 	private int attack;
 	private int cost;
-	private JButton button;
+	private CardButton button;
 	private Type type;
 
 	public Card(Fruit name, Type type) 
@@ -47,10 +47,10 @@ public class Card implements Associated
 	{
 		this.cost = cost;
 	}
-	public JButton getButton() {
+	public CardButton getButton() {
 		return button;
 	}
-	public void setButton(JButton button) {
+	public void setButton(CardButton button) {
 		this.button = button;
 	}
 

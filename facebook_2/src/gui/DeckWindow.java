@@ -34,10 +34,14 @@ public class DeckWindow extends JFrame implements Associated
         centerPanel.setBackground(Color.yellow);
         centerPanel.setLayout(new GridLayout(5, 4));
         
-        Fruit cards[] = Fruit.values();
-        for(int i = 0; i < cards.length; i++)
+//        Fruit cards[] = Fruit.values();
+//        for(int i = 0; i < cards.length; i++)
+//        {
+//            centerPanel.add(Associated.getCard(cards[i]).getButton());
+//        }
+        for(Fruit f : Fruit.values())
         {
-            centerPanel.add(Associated.getCard(cards[i]).getButton());
+        	centerPanel.add(Associated.getCard(f).getButton());
         }
 
         this.add(centerPanel, BorderLayout.CENTER);

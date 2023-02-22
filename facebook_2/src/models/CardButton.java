@@ -6,13 +6,10 @@ public class CardButton extends JButton
 {
     ImageIcon card;
     
-    public JButton getCardButton(ImageIcon card)
+    public CardButton (ImageIcon card)
     {
-        JButton button = new JButton();
-        button.setIcon(card);
+        this.setIcon(card);
         // button.addActionListener(button);
-
-        return button;
     }
 
 

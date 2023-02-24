@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="models.basic_img"/>
+	<classpathentry kind="src" path="models.epic_img"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

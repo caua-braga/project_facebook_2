@@ -11,7 +11,7 @@ public class MainWindow extends JFrame{
         this.setTitle("Project Facebook 2");
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-//        createPanelSlogan();
+        createPanelSlogan();
         createPanelButton();
         this.setVisible(true);
         
@@ -20,17 +20,16 @@ public class MainWindow extends JFrame{
 	/*
 	 * da uma melhorada na fonte 
 	 */
-//	private void createPanelSlogan()
-//	{
-//		JPanel panel = new JPanel();
-//		panel.setBackground(Color.BLACK);
-//		JLabel label=new JLabel();
-//		label.setForeground(Color.WHITE);
-//		label.setText("WELCOME TO FACEBOOK 2");
-//		label.setFont(new Font("courier", Font.ITALIC, 30 ));
-//		panel.add(label);
-//		this.add(panel, BorderLayout.NORTH);
-//	}
+	private void createPanelSlogan()
+	{
+		JPanel panel = new JPanel();
+		JLabel label=new JLabel();
+		label.setForeground(Color.WHITE);
+		label.setText("WELCOME TO FACEBOOK 2");
+		label.setFont(new Font("courier", Font.ITALIC, 30 ));
+		panel.add(label);
+		this.add(panel, BorderLayout.NORTH);
+	}
 
     private void createPanelButton() 
     {

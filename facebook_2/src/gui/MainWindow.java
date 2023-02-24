@@ -1,3 +1,4 @@
+
 package gui;
 
 import javax.swing.*;
@@ -8,17 +9,34 @@ public class MainWindow extends JFrame{
     {
         this.setSize(600, 300);
         this.setTitle("Project Facebook 2");
+        this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.getPanel();
+//        createPanelSlogan();
+        createPanelButton();
         this.setVisible(true);
         
     }
+	
+	/*
+	 * da uma melhorada na fonte 
+	 */
+//	private void createPanelSlogan()
+//	{
+//		JPanel panel = new JPanel();
+//		panel.setBackground(Color.BLACK);
+//		JLabel label=new JLabel();
+//		label.setForeground(Color.WHITE);
+//		label.setText("WELCOME TO FACEBOOK 2");
+//		label.setFont(new Font("courier", Font.ITALIC, 30 ));
+//		panel.add(label);
+//		this.add(panel, BorderLayout.NORTH);
+//	}
 
-    private void getPanel() 
+    private void createPanelButton() 
     {
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.add(new InitButton("START",this), BorderLayout.CENTER);
-        this.add(panel);
+        this.add(panel,BorderLayout.CENTER);
     }
 }

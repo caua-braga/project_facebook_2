@@ -23,8 +23,8 @@ public class InitButton extends JButton
 			public void actionPerformed(ActionEvent e) 
             {
 				frame.setVisible(false);
-				DeckWindow deck = new DeckWindow();
-			}
+				RegistrationWindow registration = new RegistrationWindow(frame);
+            }
 		});
         this.setVisible(true);
     }
